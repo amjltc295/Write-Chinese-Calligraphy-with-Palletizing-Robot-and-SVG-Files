@@ -5,7 +5,7 @@
     Date last modified: 5/26/2017
     Python Version: 3.6
 
-    Path planning for palletizing robot to write Chinese characters.
+    Path planning for 4 DOFs palletizing robot to write Chinese characters.
 
     Read characters from graphics.txt (See https://github.com/skishore/makemeahanzi).
     Each char is stored as a dictionary with three keys:
@@ -20,7 +20,7 @@
         'medians':[[[468, 819], [490, 772], [428, 689], [320, 583], [274, 547], [240, 529]], [[430, 652], [527, 665], [588, 681], [614, 681], [646, 664], [631, 632], [540, 504], [520, 478], [505, 469]]]
         }
 
-    Then, write the medians in pygame, and transform to paths for palletizing robot.
+    Then, write the character (use medians) in pygame, and transform to paths for palletizing robot.
 
 '''
 import json
@@ -33,60 +33,114 @@ Each stroke is laid out on a 1024x1024 size coordinate system where:
     The lower-right corner is at position (1024, -124).
 However, the upper-left corner of pygame is (0, 0), and there is no negative coordinate.
 So the stroke need not be shifted and flip.
+The following are related constant.
 """
 SCALE_X = 0.5
 SCALE_Y = -0.5
 SHIFT_X = 0
 SHIFT_Y = 900
 
+""" Constant for palletizing robot to touch the paper (down) and up. """
+UP_Z = 50
+DOWN_Z = 53
+
+""" Constant for pygame color """
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
-def write_sentence(DBFilename, sentence):
-    """Find char data in the DB and write the sentence."""
-    pygame.init()
-    screen = pygame.display.set_mode((WIDTH, WIDTH))
-    screen.fill(WHITE)
+class Wrapper:
+    def __init__(self, DBFilename):
+        self.DBFilename = DBFilename
+        pygame.init()
+        self.screen = pygame.display.set_mode((WIDTH, WIDTH))
+        self.screen.fill(WHITE)
 
-    characters = list(sentence)
-    print("Character list: ", characters)
-    with open(DBFilename, "r") as f:
-        all_char = f.readlines()
-        charToWriteDataList = []
-        charNotFoundList = []
-        print("")
+        """ Used to generate palletizing robot path code. """
+        self.pathCodeList = []
+        self.pointNo = 0
+        self.create_robot_point(0, 0, 0)
+
+    def write_sentence(self, sentence):
+        """Find char data in the DB and write the sentence."""
+
+        characters = list(sentence)
+        print("Character list: ", characters)
+        with open(self.DBFilename, "r") as f:
+            all_char = f.readlines()
+            charToWriteDataList = []
+            charNotFoundList = []
+            print("")
+            count = 0
+            for eachCharToWrite in sentence:
+                print("Searching ", count, " / ", len(characters), " ...", end='\r')
+                count += 1
+                found = False
+                for eachLine in all_char:
+                    eachCharInDB = json.loads(eachLine)
+                    #print (eachCharInDB['character'], end='')
+                    if eachCharToWrite == eachCharInDB['character']:
+                        charToWriteDataList.append(eachCharInDB)
+                        found = True
+                        self.write_character(eachCharInDB)
+                        break
+                if not found:
+                    charNotFoundList.append(eachCharToWrite)
+
+            print("Searching ", count, " / ", len(characters), " ... Done.")
+        print("Found: ", [char['character'] for char in charToWriteDataList])
+        print("Not found: ", [char for char in charNotFoundList])
+
+    def write_character(self, char):
+        """Write the character on Pygame."""
+        self.screen.fill(WHITE)
+        for eachLine in char['medians']:
+            pointList = [((point[0] - SHIFT_X)*SCALE_X, (point[1] - SHIFT_Y)*SCALE_Y) for point in eachLine]
+            pygame.draw.lines(self.screen, BLACK, True, pointList)
+            pygame.display.update()
+
+            self.generate_path(pointList)
+
+    def generate_path(self, pointList):
         count = 0
-        for eachCharToWrite in sentence:
-            print("Searching ", count, " / ", len(characters), " ...", end='\r')
-            count += 1
-            found = False
-            for eachLine in all_char:
-                eachCharInDB = json.loads(eachLine)
-                #print (eachCharInDB['character'], end='')
-                if eachCharToWrite == eachCharInDB['character']:
-                    charToWriteDataList.append(eachCharInDB)
-                    found = True
-                    write_character(screen, eachCharInDB)
-                    break
-            if not found:
-                charNotFoundList.append(eachCharToWrite)
+        for (x, y) in pointList:
+            """ Move to the stating point. """
+            if count == 0:
+                self.create_robot_point(x, y, UP_Z)
+            self.create_robot_point(x, y, DOWN_Z)
+            """ Move to the last point. """
+            if count == len(pointList) -1:
+                self.create_robot_point(x, y, UP_Z)
+        self.create_robot_point(0, 0, 0)
 
-        print("Searching ", count, " / ", len(characters), " ... Done.")
-    print("Found: ", [char['character'] for char in charToWriteDataList])
-    print("Not found: ", [char for char in charNotFoundList])
-
-def write_character(screen, char):
-    """Write the char on Pygame."""
-    screen.fill(WHITE)
-    for eachLine in char['medians']:
-        pointList = [((point[0] - SHIFT_X)*SCALE_X, (point[1] - SHIFT_Y)*SCALE_Y) for point in eachLine]
-        pygame.draw.lines(screen, BLACK, True, pointList)
-        pygame.display.update()
+    def create_robot_point(self, x_coor, y_coor, z_coor, spin=0):
+        """ Create palletizing robot coordinate for the point. """
+        self.pathCodeList.append("### Start of point %d ###" % (self.pointNo) )
+        #x
+        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4, x_coor))
+        #y
+        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+1, y_coor))
+        #z
+        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+2, z_coor))
+        #spin
+        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+3, spin))
+        self.pathCodeList.append("### End of point %d ###" % (self.pointNo) )
+        self.pointNo += 1
 
 
-if __name__ == '__main__':
+    def print_all(self):
+        """ Print out all generated coordinates. """
+        for eachLine in self.pathCodeList:
+            print(eachLine)
 
+
+def main():
     sentence = "床前明月光a疑是地上霜"
     sentence = input("Sentence to write: ")
     DBFilename = 'graphics.txt'
-    write_sentence(DBFilename, sentence)
+    wrapper = Wrapper(DBFilename)
+    wrapper.write_sentence(sentence)
+    wrapper.print_all()
+
+
+if __name__ == '__main__':
+    main()
