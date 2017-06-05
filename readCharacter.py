@@ -25,6 +25,7 @@
 '''
 import json
 import pygame
+import sys
 WIDTH = 500
 
 """
@@ -134,12 +135,14 @@ class Wrapper:
 
 
 def main():
-    sentence = "床前明月光a疑是地上霜"
     sentence = input("Sentence to write: ")
     DBFilename = 'graphics.txt'
     wrapper = Wrapper(DBFilename)
     wrapper.write_sentence(sentence)
     wrapper.print_all()
+    pygame.display.quit()
+    pygame.quit()
+    sys.exit()
 
 
 if __name__ == '__main__':

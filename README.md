@@ -15,7 +15,7 @@ Pygame
 ### Installing
 
 ```
-git clone 
+git clone git@github.com:amjltc295/2017ARSC-Final-Project.git <directory> 
 cd <directory>
 ```
 
