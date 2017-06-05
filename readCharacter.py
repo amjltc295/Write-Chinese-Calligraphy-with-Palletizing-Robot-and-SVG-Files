@@ -33,17 +33,31 @@ Each stroke is laid out on a 1024x1024 size coordinate system where:
     The upper-left corner is at position (0, 900).
     The lower-right corner is at position (1024, -124).
 However, the upper-left corner of pygame is (0, 0), and there is no negative coordinate.
+Moreover, the robot has different coordinate and scale.
 So the stroke need not be shifted and flip.
 The following are related constant.
+
+Pygame
+X' = x
+Y' = -y + 900
+Robot
+X' = -x + 1024
+Y' = -y + 900
 """
-SCALE_X = 0.5
-SCALE_Y = -0.5
-SHIFT_X = 0
-SHIFT_Y = 900
+SCALE_X = 0.1
+SCALE_Y = 0.1
+X_B = 1024
+Y_B = 900
+SHIFT_X = 450
+SHIFT_Y = 50
+Y_CHAR_DIS = 90
+Y_INIT_POS = -270
+INK_POS = (INK_X, INK_Y) = (570, 50)
+
 
 """ Constant for palletizing robot to touch the paper (down) and up. """
-UP_Z = 50
-DOWN_Z = 53
+UP_Z = 200
+DOWN_Z = 173
 
 """ Constant for pygame color """
 WHITE = (255, 255, 255)
@@ -59,7 +73,8 @@ class Wrapper:
         """ Used to generate palletizing robot path code. """
         self.pathCodeList = []
         self.pointNo = 0
-        self.create_robot_point(0, 0, 0)
+        self.create_robot_point(471, -6, 237)
+        self.shift_y = Y_INIT_POS
 
     def write_sentence(self, sentence):
         """Find char data in the DB and write the sentence."""
@@ -83,22 +98,34 @@ class Wrapper:
                         charToWriteDataList.append(eachCharInDB)
                         found = True
                         self.write_character(eachCharInDB)
+                        self.shift_y += Y_CHAR_DIS
                         break
                 if not found:
                     charNotFoundList.append(eachCharToWrite)
+                if count != len(sentence):
+                    self.dipInk()
 
             print("Searching ", count, " / ", len(characters), " ... Done.")
+        self.create_robot_point(0, 0, 0)
         print("Found: ", [char['character'] for char in charToWriteDataList])
         print("Not found: ", [char for char in charNotFoundList])
 
+    def dipInk(self):
+        #inkPath = [INK_POS, (INK_X-5, INK_Y)]
+        #self.generate_path(inkPath)
+        self.create_robot_point(INK_X, INK_Y, UP_Z)
+        self.create_robot_point(INK_X-5, INK_Y, UP_Z)
     def write_character(self, char):
         """Write the character on Pygame."""
         self.screen.fill(WHITE)
         for eachLine in char['medians']:
-            pointList = [((point[0] - SHIFT_X)*SCALE_X, (point[1] - SHIFT_Y)*SCALE_Y) for point in eachLine]
+            #X' = -x + 1024
+            #Y' = -y + 900
+            pointList = [((point[0] )*SCALE_X, (-point[1] + 900)*SCALE_Y) for point in eachLine]
             pygame.draw.lines(self.screen, BLACK, True, pointList)
             pygame.display.update()
 
+            pointList = [((-point[0] + X_B)*SCALE_X + SHIFT_X, (-point[1] + Y_B)*SCALE_Y + self.shift_y) for point in eachLine]
             self.generate_path(pointList)
 
     def generate_path(self, pointList):
@@ -111,20 +138,22 @@ class Wrapper:
             """ Move to the last point. """
             if count == len(pointList) -1:
                 self.create_robot_point(x, y, UP_Z)
-        self.create_robot_point(0, 0, 0)
+            count += 1
+        #self.create_robot_point(0, 0, 0)
 
     def create_robot_point(self, x_coor, y_coor, z_coor, spin=0):
         """ Create palletizing robot coordinate for the point. """
-        self.pathCodeList.append("### Start of point %d ###" % (self.pointNo) )
+        self.pathCodeList.append(";************ Start Of Cartesian Coordinate Position/Pose Point #%d***************" % (self.pointNo) )
         #x
-        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4, x_coor))
+        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+1, x_coor))
         #y
-        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+1, y_coor))
+        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+2, y_coor))
         #z
-        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+2, z_coor))
+        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+3, z_coor))
         #spin
-        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+3, spin))
-        self.pathCodeList.append("### End of point %d ###" % (self.pointNo) )
+        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+4, spin))
+        self.pathCodeList.append(";************ End Of Cartesian Coordinate Position/Pose Point   #%d***************" % (self.pointNo) )
+        self.pathCodeList.append("")
         self.pointNo += 1
 
 
@@ -132,6 +161,10 @@ class Wrapper:
         """ Print out all generated coordinates. """
         for eachLine in self.pathCodeList:
             print(eachLine)
+        with open('out.txt', 'w') as write_file:
+            for eachLine in self.pathCodeList:
+                write_file.write(eachLine)
+                write_file.write('\n')
 
 
 def main():
