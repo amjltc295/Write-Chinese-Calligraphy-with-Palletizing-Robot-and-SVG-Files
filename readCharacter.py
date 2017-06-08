@@ -52,12 +52,12 @@ SHIFT_X = 450
 SHIFT_Y = 50
 Y_CHAR_DIS = 90
 Y_INIT_POS = -270
-INK_POS = (INK_X, INK_Y) = (570, 50)
+INK_POS = (INK_X, INK_Y) = (650, 50)
 
 
 """ Constant for palletizing robot to touch the paper (down) and up. """
 UP_Z = 200
-DOWN_Z = 173
+DOWN_Z = 174
 
 """ Constant for pygame color """
 WHITE = (255, 255, 255)
