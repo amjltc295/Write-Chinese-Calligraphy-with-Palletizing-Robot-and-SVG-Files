@@ -29,8 +29,8 @@ import os, sys
 from xml.dom import minidom
 from svg.path import parse_path#, Path, Line, Arc, CubicBezier, QuadraticBezier
 WIDTH = 500
-SVG_SCALE = 0.1 
-SVG_APPROX_STEP = 0.5 # For approximating curves to lines in sys.path
+SVG_SCALE = 0.15 
+SVG_APPROX_STEP = 0.2 # For approximating curves to lines in sys.path
 
 """
 Each stroke is laid out on a 1024x1024 size coordinate system where:
@@ -48,22 +48,23 @@ Robot
 X' = -x + 1024
 Y' = -y + 900
 """
-SCALE_X = 0.1
-SCALE_Y = 0.1
+SCALE_X = 0.12
+SCALE_Y = 0.12
 X_B = 1024
 Y_B = 900
 SHIFT_X = 420
 SHIFT_Y = 50
 
-Y_CHAR_DIS = 90 # For writing chars one by one without moving the paper
-Y_INIT_POS = -270 # Initial char position
+Y_LIMIT = 300
+Y_CHAR_DIS = 900 * SCALE_Y # For writing chars one by one without moving the paper
+Y_INIT_POS = -3 * Y_CHAR_DIS # Initial char position
 Z_ADJUST = 0 # For uneven working area
-INK_POS = (INK_X, INK_Y) = (550, 50) # For automatic ink dipping
+INK_POS = (INK_X, INK_Y) = (630, 0) # For automatic ink dipping
 
 
 """ Constant for palletizing robot to touch the paper (down) and up. """
 UP_Z = 200
-DOWN_Z = 174.5
+DOWN_Z = 174
 
 """ Constant for pygame color """
 WHITE = (255, 255, 255)
@@ -78,6 +79,8 @@ class Wrapper:
     def __init__(self, DBFilename):
         self.DBFilename = DBFilename
         self.sentence = ""
+        self.filename = ""
+        self.fileNum = 1
         self.screen = None
 
         """ Used to generate palletizing robot path code. """
@@ -87,6 +90,20 @@ class Wrapper:
         self.shift_y = Y_INIT_POS
         self.up_z = UP_Z
         self.down_z = DOWN_Z
+
+    def goToNextFile(self):
+        """ When too mush point in a script file, the palletizing robot will crush.
+            Therefore a new file is needed. """
+        self.print_all()
+        
+        self.fileNum += 1
+        self.filename = self.filename.split('_')[0]
+        self.filename += '_'+str(self.fileNum)
+        self.pathCodeList = []
+        self.pointNo = 0
+        self.create_robot_point(471, -6, 237)
+
+        self.pygame_wait()
 
     def initPygame(self):
         """ Initialize pygame window. """
@@ -110,7 +127,7 @@ class Wrapper:
         
         self.initPygame()
         # Get path from SVG file
-        self.sentence = image_file.replace('/', '_').split('.')[0]
+        self.filename = image_file.replace('/', '_').split('.')[0]
         doc = minidom.parse(image_file)  
         path_strings = [path.getAttribute('d') for path
                             in doc.getElementsByTagName('path')]
@@ -138,6 +155,7 @@ class Wrapper:
 
         self.initPygame()
         self.sentence = sentence
+        self.filename = sentence
         characters = list(sentence)
         print("Character list: ", characters)
         with open(self.DBFilename, "r") as f:
@@ -155,19 +173,22 @@ class Wrapper:
                     if eachCharToWrite == eachCharInDB['character']:
                         charToWriteDataList.append(eachCharInDB)
                         found = True
-                        self.write_character(eachCharInDB)
                         """write the char in next position instead of moving paper"""
                         self.shift_y += Y_CHAR_DIS
-                        if (self.shift_y > -200):
+                        if (self.shift_y > -110):
                             self.down_z = DOWN_Z + Z_ADJUST
-                        if (self.shift_y > -50):
+                        if (self.shift_y > 40):
                             self.down_z = DOWN_Z
+                        """ return to initial pos if out of working area """
+                        if (self.shift_y > Y_LIMIT):
+                            self.shift_y = Y_INIT_POS
+                        self.write_character(eachCharInDB)
                         break
                 if not found:
                     charNotFoundList.append(eachCharToWrite)
                 if count != len(sentence):
                     self.dipInk()
-                self.ygame_wait()
+                self.pygame_wait()
 
             print("Searching ", count, " / ", len(characters), " ... Done.")
         self.create_robot_point(0, 0, 0) #End of work
@@ -177,7 +198,12 @@ class Wrapper:
     def dipInk(self):
         """ Dip the ink automatically in desired position. """
         inkPath = [INK_POS, (INK_X-5, INK_Y)]
+        self.down_z += 0.2
         self.generate_path(inkPath)
+        self.down_z += 2
+        inkPath = [(INK_X-5, INK_Y-5), (INK_X-5, INK_Y-6.5)]
+        self.generate_path(inkPath)
+        self.down_z -= 2.2
 
     def write_character(self, char):
         """ Write the character on Pygame. """
@@ -207,26 +233,34 @@ class Wrapper:
 
     def create_robot_point(self, x_coor, y_coor, z_coor, spin=0):
         """ Create palletizing robot coordinate for the point. """
+
         self.pathCodeList.append(";************ Start Of Cartesian Coordinate Position/Pose Point #%d***************" % (self.pointNo) )
         #x
-        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+1, x_coor))
+        self.pathCodeList.append("Q%d = %s" % (self.pointNo*4+1, x_coor))
         #y
-        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+2, y_coor))
+        self.pathCodeList.append("Q%d = %s" % (self.pointNo*4+2, y_coor))
         #z
-        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+3, z_coor))
+        self.pathCodeList.append("Q%d = %s" % (self.pointNo*4+3, z_coor))
         #spin
-        self.pathCodeList.append("Q%d = %d" % (self.pointNo*4+4, spin))
+        self.pathCodeList.append("Q%d = %s" % (self.pointNo*4+4, spin))
         self.pathCodeList.append(";************ End Of Cartesian Coordinate Position/Pose Point   #%d***************" % (self.pointNo) )
         self.pathCodeList.append("")
         self.pointNo += 1
 
+        """ When too much points, got to the next file. """
+        if (x_coor == 0 and y_coor == 0 and z_coor == 0):
+            self.goToNextFile()
+        if (self.pointNo > 248):
+            self.create_robot_point(0, 0, 0)
+
 
     def print_all(self):
-        """ Print out all generated coordinates. """
+        """ Print out all generated coordinates and write ouput file. """
         for eachLine in self.pathCodeList:
             print(eachLine)
+        print ("End of file, write into %s.txt ... " % self.filename)
 
-        with open('out/%s.txt' % self.sentence, 'w') as write_file:
+        with open('out/%s.txt' % self.filename, 'w') as write_file:
             for eachLine in self.pathCodeList:
                 write_file.write(eachLine)
                 write_file.write('\n')
@@ -255,7 +289,7 @@ def main():
             return
 
  
-        wrapper.print_all()
+        #wrapper.print_all()
         pygame.display.quit()
         pygame.quit()
         sys.exit()
