@@ -29,7 +29,7 @@ import os, sys
 from xml.dom import minidom
 from svg.path import parse_path#, Path, Line, Arc, CubicBezier, QuadraticBezier
 WIDTH = 500
-SVG_SCALE = 0.15 
+SVG_SCALE = 0.15
 SVG_APPROX_STEP = 0.2 # For approximating curves to lines in sys.path
 
 """
@@ -59,12 +59,12 @@ Y_LIMIT = 300
 Y_CHAR_DIS = 900 * SCALE_Y # For writing chars one by one without moving the paper
 Y_INIT_POS = -3 * Y_CHAR_DIS # Initial char position
 Z_ADJUST = 0 # For uneven working area
-INK_POS = (INK_X, INK_Y) = (630, 0) # For automatic ink dipping
+INK_POS = (INK_X, INK_Y) = (616, 11) # For automatic ink dipping
 
 
 """ Constant for palletizing robot to touch the paper (down) and up. """
-UP_Z = 200
-DOWN_Z = 174
+UP_Z = 170
+DOWN_Z = 140
 
 """ Constant for pygame color """
 WHITE = (255, 255, 255)
@@ -95,7 +95,7 @@ class Wrapper:
         """ When too mush point in a script file, the palletizing robot will crush.
             Therefore a new file is needed. """
         self.print_all()
-        
+
         self.fileNum += 1
         self.filename = self.filename.split('_')[0]
         self.filename += '_'+str(self.fileNum)
@@ -120,15 +120,15 @@ class Wrapper:
                     sys.exit()
                 if event.type == pygame.KEYDOWN:
                     return
-    
+
 
     def draw_image(self, image_file):
         """ Draw the SVG file with some apporximation. """
-        
+
         self.initPygame()
         # Get path from SVG file
         self.filename = image_file.replace('/', '_').split('.')[0]
-        doc = minidom.parse(image_file)  
+        doc = minidom.parse(image_file)
         path_strings = [path.getAttribute('d') for path
                             in doc.getElementsByTagName('path')]
         doc.unlink()
@@ -138,7 +138,7 @@ class Wrapper:
             for j in range(0, int(len(p)), 2): # Skip half object (lines, arcs...)
                 eachObject = p[j]
                 """Approximate the curve throught floating-point steps from 0 to 1"""
-                for i in range(0, int(1.0/SVG_APPROX_STEP)): 
+                for i in range(0, int(1.0/SVG_APPROX_STEP)):
                     i = round(i * SVG_APPROX_STEP, 3)
                     x = int(round(eachObject.point(i).real * SVG_SCALE + SHIFT_X/2, 3))
                     y = int(round(eachObject.point(i).imag * SVG_SCALE, 3))
@@ -149,7 +149,7 @@ class Wrapper:
             #pygame.draw.polygon(self.screen, BLACK, pointList)
             pygame.draw.lines(self.screen, BLACK, False, pointList, 5)
             pygame.display.update()
-        
+
     def write_sentence(self, sentence):
         """ Find char data in the DB and write the sentence. """
 
@@ -197,13 +197,13 @@ class Wrapper:
 
     def dipInk(self):
         """ Dip the ink automatically in desired position. """
-        inkPath = [INK_POS, (INK_X-5, INK_Y)]
-        self.down_z += 0.2
+        inkPath = [(INK_X, INK_Y)]
+        self.down_z += 5
         self.generate_path(inkPath)
-        self.down_z += 2
-        inkPath = [(INK_X-5, INK_Y-5), (INK_X-5, INK_Y-6.5)]
+        self.down_z += 10
+        inkPath = [(INK_X-20, INK_Y)]
         self.generate_path(inkPath)
-        self.down_z -= 2.2
+        self.down_z -= 15
 
     def write_character(self, char):
         """ Write the character on Pygame. """
@@ -288,7 +288,7 @@ def main():
             help_message()
             return
 
- 
+
         #wrapper.print_all()
         pygame.display.quit()
         pygame.quit()
