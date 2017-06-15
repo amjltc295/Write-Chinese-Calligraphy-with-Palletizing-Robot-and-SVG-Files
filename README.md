@@ -1,5 +1,8 @@
-# 2017 ARSC Final Project
-Path planning for 4 DOFs palletizing robot to write Chinese characters.
+# Write Chinese Calligraphy with Palletizing Robot and SVG Files
+
+2017 Advanced Robot Sensing and Controlling - Final Project
+
+Path planning for 4 DOFs palletizing robot to write Chinese characters. Could draw pictures as well.
 
 Convert path in SVG file to robot's path and display on Pygame.
 
