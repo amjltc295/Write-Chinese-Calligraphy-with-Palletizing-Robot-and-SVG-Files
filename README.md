@@ -13,6 +13,7 @@ See the [demo video](https://www.youtube.com/watch?v=yH4Tf5Qy-iw&feature=youtu.b
 <img src="/images/robot_writing.png" alt="Drawing" style="width: 250px;"/>
 
 
+
 ## Getting Started
 
 ### Prerequisites
@@ -30,6 +31,7 @@ git clone git@github.com:amjltc295/2017ARSC-Final-Project.git <directory>
 cd <directory>
 ```
 
+
 ## Running the tests
 
 ```
@@ -45,14 +47,17 @@ python drawSVG.py -d <SVG file>
 * [makemeahanzi](https://github.com/skishore/makemeahanzi) - Use graphics.txt data
 
 
+
 ## Authors
 
 * **Ya-Liang Chang** - *Initial work* - [amjltc295](https://github.com/amjltc295)
 
 
+
 ## License
 
 This project is licensed under the MIT License.
+
 
 
 ## Acknowledgments
