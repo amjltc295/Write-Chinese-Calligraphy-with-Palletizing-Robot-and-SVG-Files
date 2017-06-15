@@ -1,16 +1,16 @@
 # 2017 ARSC Final Project
 Path planning for 4 DOFs palletizing robot to write Chinese characters.
+Convert path in SVG file to robot's path and display on Pygame.
 
 
 ## Getting Started
 
 ### Prerequisites
-
+```
 Python 3.6
-
-Json
-
-Pygame
+    Json
+    Pygame
+    svg.path
 
 ### Installing
 
@@ -22,7 +22,10 @@ cd <directory>
 ## Running the tests
 
 ```
-python readCharcaters.py
+// Write sentence
+python drawSVG.py -s
+// Draw SVG
+python drawSVG.py -d <SVG file>
 ```
 
 
@@ -43,5 +46,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
+Thanks my teammates, Cheng Yun Yang and  Wu Yu Huang, for helping me operate the palletizing robot.
+Thanks Professor Ren C. Luo for the Advanced Robot Sensing and Controlling course.
 
 

@@ -1,7 +1,0 @@
-;************ Start Of Cartesian Coordinate Position/Pose Point #0***************
-Q1 = 471
-Q2 = -6
-Q3 = 237
-Q4 = 0
-;************ End Of Cartesian Coordinate Position/Pose Point   #0***************
-
