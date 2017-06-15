@@ -5,9 +5,9 @@ Convert path in SVG file to robot's path and display on Pygame.
 
 See the [demo video](https://www.youtube.com/watch?v=yH4Tf5Qy-iw&feature=youtu.be).
 
-![pygame display image](/images/program_example.png =300x)
+<img src="/images/program_example.png" alt="Drawing" style="width: 300px;"/>
 
-![robot writing image](/images/robot_writing.png =300x)
+<img src="/images/robot_writingimage.png" alt="Drawing" style="width: 300px;"/>
 
 
 ## Getting Started
