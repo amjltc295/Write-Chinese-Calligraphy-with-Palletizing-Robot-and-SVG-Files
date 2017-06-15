@@ -27,7 +27,7 @@ Python 3.6
 ### Installing
 
 ```
-git clone git@github.com:amjltc295/2017ARSC-Final-Project.git <directory> 
+git clone git@github.com:amjltc295/Write-Chinese-Calligraphy-with-Palletizing-Robot-and-SVG-Files.git <directory> 
 cd <directory>
 ```
 
