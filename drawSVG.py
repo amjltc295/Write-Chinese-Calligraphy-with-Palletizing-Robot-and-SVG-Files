@@ -72,7 +72,7 @@ And the characters need to be shrinked and shifted to the right position.
     X' = X * scale_x + shift_x
     Y' = Y * scale_y + shift_y
 
-Resulting 
+Resulting
     pointList = [((-point[0] + X_B)*SCALE_X + SHIFT_X, (-point[1] + Y_B)*SCALE_Y + self.shift_y) for point in eachLine]
 
 The following are related constant.
@@ -145,6 +145,7 @@ class Wrapper:
     def pygame_wait(self):
         """ Wait until user press a key. """
         pygame.display.update()
+        print ("Press button to continue ..")
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -337,6 +338,8 @@ class Wrapper:
             print(eachLine)
         print ("End of file, write into %s.txt ... " % self.filename)
 
+        if not os.path.isdir('out'):
+            os.mkdir('out')
         with open('out/%s.txt' % self.filename, 'w') as write_file:
             for eachLine in self.pathCodeList:
                 write_file.write(eachLine)
