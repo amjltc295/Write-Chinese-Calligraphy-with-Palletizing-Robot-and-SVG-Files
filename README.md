@@ -1,6 +1,17 @@
-# 2017 ARSC Final Project
-Path planning for 4 DOFs palletizing robot to write Chinese characters.
+# Write Chinese Calligraphy with Palletizing Robot and SVG Files
+
+2017 Advanced Robot Sensing and Controlling - Final Project
+
+Path planning for 4 DOFs palletizing robot to write Chinese characters. Could draw pictures as well.
+
 Convert path in SVG file to robot's path and display on Pygame.
+
+See the [demo video](https://www.youtube.com/watch?v=yH4Tf5Qy-iw&feature=youtu.be).
+
+<img src="/images/program_example.png" alt="Drawing" style="width: 250px;"/>
+
+<img src="/images/robot_writing.png" alt="Drawing" style="width: 250px;"/>
+
 
 
 ## Getting Started
@@ -11,13 +22,15 @@ Python 3.6
     Json
     Pygame
     svg.path
+```
 
 ### Installing
 
 ```
-git clone git@github.com:amjltc295/2017ARSC-Final-Project.git <directory> 
+git clone git@github.com:amjltc295/Write-Chinese-Calligraphy-with-Palletizing-Robot-and-SVG-Files.git <directory> 
 cd <directory>
 ```
+
 
 ## Running the tests
 
@@ -34,14 +47,17 @@ python drawSVG.py -d <SVG file>
 * [makemeahanzi](https://github.com/skishore/makemeahanzi) - Use graphics.txt data
 
 
+
 ## Authors
 
 * **Ya-Liang Chang** - *Initial work* - [amjltc295](https://github.com/amjltc295)
 
 
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License.
+
 
 
 ## Acknowledgments
