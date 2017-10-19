@@ -46,7 +46,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-Thanks my teammates, Cheng Yun Yang and  Wu Yu Huang, for helping me operate the palletizing robot.
-Thanks Professor Ren C. Luo for the Advanced Robot Sensing and Controlling course.
+Thank for my teammates, Cheng Yun Yang and  Wu Yu Huang, for helping me operate the palletizing robot.
+Thank for Professor Ren C. Luo for the Advanced Robot Sensing and Controlling course.
 
 
