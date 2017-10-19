@@ -53,6 +53,7 @@ PYGAME_LINE_WIDTH = 4
 PYGAME_THIN_LINE_WIDTH = 2
 PYGAME_THICK_LINE_WIDTH = 7
 NOT_ADJUST_THICKNESS = True
+#NOT_ADJUST_THICKNESS = False
 
 """
 Each stroke is laid out on a 1024x1024 size coordinate system where:
@@ -88,14 +89,14 @@ SHIFT_Y = 50
 Y_CHAR_DIS = 900 * SCALE_Y # For writing chars one by one without moving the paper
 Y_INIT_POS = -3.5 * Y_CHAR_DIS # Initial char position
 Z_ADJUST = 0 # For uneven working area
-INK_POS = (INK_X, INK_Y) = (631, 48) # For automatic ink dipping
-Z_THICK_ADJUST = 0.3 #Adjust z for thicker strokes
-Z_THIN_ADJUST = 0.5
+INK_POS = (INK_X, INK_Y) = (631, 0) # For automatic ink dipping
+Z_THICK_ADJUST = 0.2 #Adjust z for thicker strokes
+Z_THIN_ADJUST = 0.2
 
 
 """ Constant for palletizing robot to touch the paper (down) and up. """
 UP_Z = 150
-DOWN_Z = 124.9
+DOWN_Z = 125
 
 """ Constant for pygame color """
 WHITE = (255, 255, 255)
@@ -171,10 +172,11 @@ class Wrapper:
         newPointList = [((-x + X_B)*SCALE_X + SHIFT_X, (-y + Y_B)*SCALE_Y + self.shift_y) for x, y in pointList]
         return newPointList
 
-    def draw_image(self, image_file):
+    def draw_image(self, image_file, svg_scale=SVG_SCALE):
         """ Draw the SVG file with some apporximation. """
 
         self.initPygame()
+        self.down_z  += 0.2
         # Get path from SVG file
         self.filename = image_file.replace('/', '-').split('.')[0]
         doc = minidom.parse(image_file)
@@ -191,8 +193,8 @@ class Wrapper:
                 """Approximate the curve throught floating-point steps from 0 to 1"""
                 for i in range(0, int(1.0/SVG_APPROX_STEP)):
                     i = round(i * SVG_APPROX_STEP, 3)
-                    x = int(round(eachObject.point(i).real * SVG_SCALE + SHIFT_X/2, 3))
-                    y = int(round(eachObject.point(i).imag * SVG_SCALE, 3))
+                    x = int(round(eachObject.point(i).real * svg_scale + SHIFT_X/2, 3))
+                    y = int(round(eachObject.point(i).imag * svg_scale, 3))
                     print (i, x, y, flush=True)
                     pointList.append((x, y))
             pointList = [(point[0]+160, -point[1]+120) for point in pointList]
@@ -247,11 +249,11 @@ class Wrapper:
     def dipInk(self):
         """ Dip the ink automatically in desired position. """
         inkPath = [(INK_X, INK_Y)]
-        self.down_z += 5
+        self.down_z += 3
         self.up_z -= 10
         self.generate_path(inkPath)
         self.create_robot_point(INK_X-36, INK_Y, self.up_z)
-        self.down_z -= 5
+        self.down_z -= 3
         self.up_z += 10
         self.create_robot_point(INK_X-36, INK_Y, self.up_z)
 
@@ -344,7 +346,7 @@ class Wrapper:
 
 
 def main():
-    if len(sys.argv) < 2 or len(sys.argv) > 3:
+    if len(sys.argv) < 2:
         help_message()
     else:
         DBFilename = 'graphics.txt'
@@ -356,7 +358,12 @@ def main():
             #image_file = input("image: ")
             image_file = sys.argv[2]
             if (os.path.isfile(image_file)):
-                wrapper.draw_image(image_file)
+                if (len(sys.argv) == 4):
+                    wrapper.draw_image(image_file, float(sys.argv[3]))
+                else:
+                    wrapper.draw_image(image_file)
+
+
             else:
                 print ("Error: Image not exists.")
                 help_message()
