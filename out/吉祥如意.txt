@@ -15,35 +15,35 @@ Q8 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #2***************
 Q9 = 524.28
 Q10 = -228.48000000000002
-Q11 = 124.9
+Q11 = 124.8
 Q12 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #2***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #3***************
 Q13 = 517.44
 Q14 = -227.28
-Q15 = 124.9
+Q15 = 124.8
 Q16 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #3***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #4***************
 Q17 = 493.68
 Q18 = -231.12
-Q19 = 124.9
+Q19 = 124.8
 Q20 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #4***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #5***************
 Q21 = 447.72
 Q22 = -235.8
-Q23 = 124.9
+Q23 = 124.8
 Q24 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #5***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #6***************
 Q25 = 437.4
 Q26 = -233.16
-Q27 = 124.9
+Q27 = 124.8
 Q28 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #6***************
 
@@ -64,28 +64,28 @@ Q36 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #9***************
 Q37 = 488.15999999999997
 Q38 = -259.44
-Q39 = 124.9
+Q39 = 124.8
 Q40 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #9***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #10***************
 Q41 = 481.8
 Q42 = -254.4
-Q43 = 124.9
+Q43 = 124.8
 Q44 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #10***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #11***************
 Q45 = 482.76
 Q46 = -214.92000000000002
-Q47 = 124.9
+Q47 = 124.8
 Q48 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #11***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #12***************
 Q49 = 484.92
 Q50 = -212.04
-Q51 = 124.9
+Q51 = 124.8
 Q52 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #12***************
 
@@ -106,35 +106,35 @@ Q60 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #15***************
 Q61 = 508.08
 Q62 = -207.12
-Q63 = 124.9
+Q63 = 124.8
 Q64 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #15***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #16***************
 Q65 = 501.48
 Q66 = -206.28
-Q67 = 124.9
+Q67 = 124.8
 Q68 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #16***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #17***************
 Q69 = 464.76
 Q70 = -210.96
-Q71 = 124.9
+Q71 = 124.8
 Q72 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #17***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #18***************
 Q73 = 460.8
 Q74 = -210.84
-Q75 = 124.9
+Q75 = 124.8
 Q76 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #18***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #19***************
 Q77 = 454.08
 Q78 = -208.92000000000002
-Q79 = 124.9
+Q79 = 124.8
 Q80 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #19***************
 
@@ -155,21 +155,21 @@ Q88 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #22***************
 Q89 = 509.52
 Q90 = -191.64
-Q91 = 124.9
+Q91 = 124.8
 Q92 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #22***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #23***************
 Q93 = 505.32
 Q94 = -188.04000000000002
-Q95 = 124.9
+Q95 = 124.8
 Q96 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #23***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #24***************
 Q97 = 499.68
 Q98 = -159.12
-Q99 = 124.9
+Q99 = 124.8
 Q100 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #24***************
 
@@ -190,56 +190,56 @@ Q108 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #27***************
 Q109 = 501.12
 Q110 = -187.32
-Q111 = 124.9
+Q111 = 124.8
 Q112 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #27***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #28***************
 Q113 = 498.48
 Q114 = -189.24
-Q115 = 124.9
+Q115 = 124.8
 Q116 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #28***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #29***************
 Q117 = 478.68
 Q118 = -191.76
-Q119 = 124.9
+Q119 = 124.8
 Q120 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #29***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #30***************
 Q121 = 468.0
 Q122 = -194.28
-Q123 = 124.9
+Q123 = 124.8
 Q124 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #30***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #31***************
 Q125 = 463.2
 Q126 = -194.04000000000002
-Q127 = 124.9
+Q127 = 124.8
 Q128 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #31***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #32***************
 Q129 = 458.64
 Q130 = -189.48000000000002
-Q131 = 124.9
+Q131 = 125
 Q132 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #32***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #33***************
 Q133 = 463.32
 Q134 = -175.92000000000002
-Q135 = 124.9
+Q135 = 125
 Q136 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #33***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #34***************
 Q137 = 466.8
 Q138 = -173.4
-Q139 = 124.9
+Q139 = 125
 Q140 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #34***************
 
@@ -260,35 +260,35 @@ Q148 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #37***************
 Q149 = 497.64
 Q150 = -168.12
-Q151 = 124.9
+Q151 = 125
 Q152 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #37***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #38***************
 Q153 = 495.48
 Q154 = -166.68
-Q155 = 124.9
+Q155 = 125
 Q156 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #38***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #39***************
 Q157 = 468.24
 Q158 = -169.8
-Q159 = 124.9
+Q159 = 125
 Q160 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #39***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #40***************
 Q161 = 461.4
 Q162 = -169.68
-Q163 = 124.9
+Q163 = 125
 Q164 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #40***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #41***************
 Q165 = 458.4
 Q166 = -168.36
-Q167 = 124.9
+Q167 = 125
 Q168 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #41***************
 
@@ -301,35 +301,35 @@ Q172 = 0
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #43***************
 Q173 = 631
-Q174 = 48
+Q174 = 0
 Q175 = 140
 Q176 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #43***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #44***************
 Q177 = 631
-Q178 = 48
-Q179 = 129.9
+Q178 = 0
+Q179 = 128
 Q180 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #44***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #45***************
 Q181 = 631
-Q182 = 48
+Q182 = 0
 Q183 = 140
 Q184 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #45***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #46***************
 Q185 = 595
-Q186 = 48
+Q186 = 0
 Q187 = 140
 Q188 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #46***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #47***************
 Q189 = 595
-Q190 = 48
+Q190 = 0
 Q191 = 150
 Q192 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #47***************
@@ -344,21 +344,21 @@ Q196 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #49***************
 Q197 = 509.64
 Q198 = -151.2
-Q199 = 124.9
+Q199 = 125
 Q200 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #49***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #50***************
 Q201 = 501.12
 Q202 = -144.24
-Q203 = 124.9
+Q203 = 125
 Q204 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #50***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #51***************
 Q205 = 498.72
 Q206 = -140.52
-Q207 = 124.9
+Q207 = 125
 Q208 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #51***************
 
@@ -379,70 +379,70 @@ Q216 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #54***************
 Q217 = 530.16
 Q218 = -120.12
-Q219 = 124.9
+Q219 = 125
 Q220 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #54***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #55***************
 Q221 = 528.0
 Q222 = -119.16
-Q223 = 124.9
+Q223 = 125
 Q224 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #55***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #56***************
 Q225 = 523.2
 Q226 = -118.80000000000001
-Q227 = 124.9
+Q227 = 125
 Q228 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #56***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #57***************
 Q229 = 511.56
 Q230 = -122.03999999999999
-Q231 = 124.9
+Q231 = 125
 Q232 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #57***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #58***************
 Q233 = 505.32
 Q234 = -124.80000000000001
-Q235 = 124.9
+Q235 = 125
 Q236 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #58***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #59***************
 Q237 = 498.84000000000003
 Q238 = -124.44
-Q239 = 124.9
+Q239 = 125
 Q240 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #59***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #60***************
 Q241 = 502.08
 Q242 = -116.64
-Q243 = 124.9
+Q243 = 125
 Q244 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #60***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #61***************
 Q245 = 515.76
 Q246 = -96.72
-Q247 = 124.9
+Q247 = 125
 Q248 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #61***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #62***************
 Q249 = 525.12
 Q250 = -86.64
-Q251 = 124.9
+Q251 = 125
 Q252 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #62***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #63***************
 Q253 = 536.04
 Q254 = -78.0
-Q255 = 124.9
+Q255 = 125
 Q256 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #63***************
 
@@ -463,35 +463,35 @@ Q264 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #66***************
 Q265 = 510.48
 Q266 = -98.52000000000001
-Q267 = 124.9
+Q267 = 125
 Q268 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #66***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #67***************
 Q269 = 508.44
 Q270 = -91.8
-Q271 = 124.9
+Q271 = 125
 Q272 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #67***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #68***************
 Q273 = 508.92
 Q274 = -72.60000000000001
-Q275 = 124.9
+Q275 = 125
 Q276 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #68***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #69***************
 Q277 = 510.12
 Q278 = -61.92
-Q279 = 124.9
+Q279 = 125
 Q280 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #69***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #70***************
 Q281 = 509.4
 Q282 = -56.040000000000006
-Q283 = 124.9
+Q283 = 125
 Q284 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #70***************
 
@@ -512,21 +512,21 @@ Q292 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #73***************
 Q293 = 502.56
 Q294 = -103.80000000000001
-Q295 = 124.9
+Q295 = 125
 Q296 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #73***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #74***************
 Q297 = 494.52
 Q298 = -99.72
-Q299 = 124.9
+Q299 = 125
 Q300 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #74***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #75***************
 Q301 = 491.64
 Q302 = -96.0
-Q303 = 124.9
+Q303 = 125
 Q304 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #75***************
 
@@ -547,21 +547,21 @@ Q312 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #78***************
 Q313 = 482.4
 Q314 = -147.72
-Q315 = 124.9
+Q315 = 125
 Q316 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #78***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #79***************
 Q317 = 474.0
 Q318 = -141.36
-Q319 = 124.9
+Q319 = 125
 Q320 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #79***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #80***************
 Q321 = 471.72
 Q322 = -137.16
-Q323 = 124.9
+Q323 = 125
 Q324 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #80***************
 
@@ -582,21 +582,21 @@ Q332 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #83***************
 Q333 = 451.56
 Q334 = -155.16
-Q335 = 124.9
+Q335 = 125
 Q336 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #83***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #84***************
 Q337 = 448.68
 Q338 = -151.08
-Q339 = 124.9
+Q339 = 125
 Q340 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #84***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #85***************
 Q341 = 463.32
 Q342 = -134.04
-Q343 = 124.9
+Q343 = 125
 Q344 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #85***************
 
@@ -617,35 +617,35 @@ Q352 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #88***************
 Q353 = 482.76
 Q354 = -124.68
-Q355 = 124.9
+Q355 = 125
 Q356 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #88***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #89***************
 Q357 = 480.0
 Q358 = -123.84
-Q359 = 124.9
+Q359 = 125
 Q360 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #89***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #90***************
 Q361 = 475.32
 Q362 = -123.96000000000001
-Q363 = 124.9
+Q363 = 125
 Q364 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #90***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #91***************
 Q365 = 451.08
 Q366 = -129.24
-Q367 = 124.9
+Q367 = 125
 Q368 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #91***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #92***************
 Q369 = 443.04
 Q370 = -129.84
-Q371 = 124.9
+Q371 = 125
 Q372 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #92***************
 
@@ -666,35 +666,35 @@ Q380 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #95***************
 Q381 = 482.28
 Q382 = -107.4
-Q383 = 124.9
+Q383 = 125
 Q384 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #95***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #96***************
 Q385 = 475.56
 Q386 = -106.56
-Q387 = 124.9
+Q387 = 125
 Q388 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #96***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #97***************
 Q389 = 460.56
 Q390 = -108.96000000000001
-Q391 = 124.9
+Q391 = 125
 Q392 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #97***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #98***************
 Q393 = 451.56
 Q394 = -111.24000000000001
-Q395 = 124.9
+Q395 = 125
 Q396 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #98***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #99***************
 Q397 = 446.28
 Q398 = -111.12
-Q399 = 124.9
+Q399 = 125
 Q400 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #99***************
 
@@ -715,42 +715,42 @@ Q408 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #102***************
 Q409 = 493.68
 Q410 = -88.56
-Q411 = 124.9
+Q411 = 125
 Q412 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #102***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #103***************
 Q413 = 489.24
 Q414 = -87.72
-Q415 = 124.9
+Q415 = 125
 Q416 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #103***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #104***************
 Q417 = 485.88
 Q418 = -88.08
-Q419 = 124.9
+Q419 = 125
 Q420 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #104***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #105***************
 Q421 = 472.08
 Q422 = -90.84
-Q423 = 124.9
+Q423 = 125
 Q424 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #105***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #106***************
 Q425 = 438.84
 Q426 = -95.28
-Q427 = 124.9
+Q427 = 125
 Q428 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #106***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #107***************
 Q429 = 429.12
 Q430 = -93.24000000000001
-Q431 = 124.9
+Q431 = 125
 Q432 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #107***************
 
@@ -771,28 +771,28 @@ Q440 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #110***************
 Q441 = 469.32
 Q442 = -121.92
-Q443 = 124.9
+Q443 = 125
 Q444 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #110***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #111***************
 Q445 = 464.88
 Q446 = -119.16
-Q447 = 124.9
+Q447 = 125
 Q448 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #111***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #112***************
 Q449 = 464.76
 Q450 = -118.32
-Q451 = 124.9
+Q451 = 125
 Q452 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #112***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #113***************
 Q453 = 465.72
 Q454 = -46.32000000000001
-Q455 = 124.9
+Q455 = 125
 Q456 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #113***************
 
@@ -805,35 +805,35 @@ Q460 = 0
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #115***************
 Q461 = 631
-Q462 = 48
+Q462 = 0
 Q463 = 140
 Q464 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #115***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #116***************
 Q465 = 631
-Q466 = 48
-Q467 = 129.9
+Q466 = 0
+Q467 = 128
 Q468 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #116***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #117***************
 Q469 = 631
-Q470 = 48
+Q470 = 0
 Q471 = 140
 Q472 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #117***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #118***************
 Q473 = 595
-Q474 = 48
+Q474 = 0
 Q475 = 140
 Q476 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #118***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #119***************
 Q477 = 595
-Q478 = 48
+Q478 = 0
 Q479 = 150
 Q480 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #119***************
@@ -848,63 +848,63 @@ Q484 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #121***************
 Q485 = 502.32
 Q486 = -41.64
-Q487 = 124.9
+Q487 = 125
 Q488 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #121***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #122***************
 Q489 = 499.44
 Q490 = -39.24
-Q491 = 124.9
+Q491 = 125
 Q492 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #122***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #123***************
 Q493 = 496.92
 Q494 = -34.8
-Q495 = 124.9
+Q495 = 125
 Q496 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #123***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #124***************
 Q497 = 503.88
 Q498 = -5.039999999999999
-Q499 = 124.9
+Q499 = 125
 Q500 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #124***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #125***************
 Q501 = 511.56
 Q502 = 19.439999999999998
-Q503 = 124.9
+Q503 = 125
 Q504 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #125***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #126***************
 Q505 = 509.52
 Q506 = 21.72
-Q507 = 124.9
+Q507 = 125
 Q508 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #126***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #127***************
 Q509 = 485.88
 Q510 = 36.84
-Q511 = 124.9
+Q511 = 125
 Q512 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #127***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #128***************
 Q513 = 483.6
 Q514 = 39.84
-Q515 = 124.9
+Q515 = 125
 Q516 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #128***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #129***************
 Q517 = 482.4
 Q518 = 43.31999999999999
-Q519 = 124.9
+Q519 = 125
 Q520 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #129***************
 
@@ -925,63 +925,63 @@ Q528 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #132***************
 Q529 = 488.88
 Q530 = -10.200000000000003
-Q531 = 124.9
+Q531 = 125
 Q532 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #132***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #133***************
 Q533 = 486.72
 Q534 = -8.520000000000003
-Q535 = 124.9
+Q535 = 125
 Q536 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #133***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #134***************
 Q537 = 484.56
 Q538 = -4.800000000000004
-Q539 = 124.9
+Q539 = 125
 Q540 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #134***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #135***************
 Q541 = 489.84000000000003
 Q542 = 14.280000000000001
-Q543 = 124.9
+Q543 = 125
 Q544 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #135***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #136***************
 Q545 = 495.84000000000003
 Q546 = 27.0
-Q547 = 124.9
+Q547 = 125
 Q548 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #136***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #137***************
 Q549 = 500.4
 Q550 = 33.239999999999995
-Q551 = 124.9
+Q551 = 125
 Q552 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #137***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #138***************
 Q553 = 506.88
 Q554 = 39.11999999999999
-Q555 = 124.9
+Q555 = 125
 Q556 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #138***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #139***************
 Q557 = 513.96
 Q558 = 43.8
-Q559 = 124.9
+Q559 = 125
 Q560 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #139***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #140***************
 Q561 = 523.2
 Q562 = 47.519999999999996
-Q563 = 124.9
+Q563 = 125
 Q564 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #140***************
 
@@ -1002,35 +1002,35 @@ Q572 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #143***************
 Q573 = 533.52
 Q574 = 2.6400000000000006
-Q575 = 124.9
+Q575 = 125
 Q576 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #143***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #144***************
 Q577 = 526.92
 Q578 = 5.399999999999999
-Q579 = 124.9
+Q579 = 125
 Q580 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #144***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #145***************
 Q581 = 516.84
 Q582 = 2.280000000000001
-Q583 = 124.9
+Q583 = 125
 Q584 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #145***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #146***************
 Q585 = 492.0
 Q586 = -3.240000000000002
-Q587 = 124.9
+Q587 = 125
 Q588 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #146***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #147***************
 Q589 = 489.96
 Q590 = -5.280000000000001
-Q591 = 124.9
+Q591 = 125
 Q592 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #147***************
 
@@ -1051,28 +1051,28 @@ Q600 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #150***************
 Q601 = 475.92
 Q602 = -0.8400000000000034
-Q603 = 124.9
+Q603 = 125
 Q604 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #150***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #151***************
 Q605 = 473.04
 Q606 = 1.6799999999999997
-Q607 = 124.9
+Q607 = 125
 Q608 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #151***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #152***************
 Q609 = 471.48
 Q610 = 4.439999999999998
-Q611 = 124.9
+Q611 = 125
 Q612 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #152***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #153***************
 Q613 = 466.56
 Q614 = 32.39999999999999
-Q615 = 124.9
+Q615 = 125
 Q616 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #153***************
 
@@ -1093,63 +1093,63 @@ Q624 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #156***************
 Q625 = 469.32
 Q626 = -0.480000000000004
-Q627 = 124.9
+Q627 = 125
 Q628 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #156***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #157***************
 Q629 = 468.0
 Q630 = 0.4799999999999969
-Q631 = 124.9
+Q631 = 125
 Q632 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #157***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #158***************
 Q633 = 466.08
 Q634 = 0.6000000000000014
-Q635 = 124.9
+Q635 = 125
 Q636 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #158***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #159***************
 Q637 = 447.72
 Q638 = -4.560000000000002
-Q639 = 124.9
+Q639 = 125
 Q640 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #159***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #160***************
 Q641 = 444.24
 Q642 = -3.8400000000000034
-Q643 = 124.9
+Q643 = 125
 Q644 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #160***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #161***************
 Q645 = 441.6
 Q646 = -1.9200000000000017
-Q647 = 124.9
+Q647 = 125
 Q648 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #161***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #162***************
 Q649 = 440.4
 Q650 = -0.480000000000004
-Q651 = 124.9
+Q651 = 125
 Q652 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #162***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #163***************
 Q653 = 444.48
 Q654 = 17.039999999999992
-Q655 = 124.9
+Q655 = 125
 Q656 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #163***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #164***************
 Q657 = 447.84
 Q658 = 20.039999999999992
-Q659 = 124.9
+Q659 = 125
 Q660 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #164***************
 
@@ -1170,35 +1170,35 @@ Q668 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #167***************
 Q669 = 464.15999999999997
 Q670 = 28.439999999999998
-Q671 = 124.9
+Q671 = 125
 Q672 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #167***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #168***************
 Q673 = 462.0
 Q674 = 26.39999999999999
-Q675 = 124.9
+Q675 = 125
 Q676 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #168***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #169***************
 Q677 = 449.4
 Q678 = 24.0
-Q679 = 124.9
+Q679 = 125
 Q680 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #169***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #170***************
 Q681 = 443.28
 Q682 = 23.75999999999999
-Q683 = 124.9
+Q683 = 125
 Q684 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #170***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #171***************
 Q685 = 439.92
 Q686 = 24.72
-Q687 = 124.9
+Q687 = 125
 Q688 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #171***************
 
@@ -1211,35 +1211,35 @@ Q692 = 0
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #173***************
 Q693 = 631
-Q694 = 48
+Q694 = 0
 Q695 = 140
 Q696 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #173***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #174***************
 Q697 = 631
-Q698 = 48
-Q699 = 129.9
+Q698 = 0
+Q699 = 128
 Q700 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #174***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #175***************
 Q701 = 631
-Q702 = 48
+Q702 = 0
 Q703 = 140
 Q704 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #175***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #176***************
 Q705 = 595
-Q706 = 48
+Q706 = 0
 Q707 = 140
 Q708 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #176***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #177***************
 Q709 = 595
-Q710 = 48
+Q710 = 0
 Q711 = 150
 Q712 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #177***************
@@ -1254,21 +1254,21 @@ Q716 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #179***************
 Q717 = 487.44
 Q718 = 59.88
-Q719 = 124.9
+Q719 = 125
 Q720 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #179***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #180***************
 Q721 = 477.48
 Q722 = 65.88
-Q723 = 124.9
+Q723 = 125
 Q724 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #180***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #181***************
 Q725 = 475.56
 Q726 = 69.24
-Q727 = 124.9
+Q727 = 125
 Q728 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #181***************
 
@@ -1289,42 +1289,42 @@ Q736 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #184***************
 Q737 = 505.2
 Q738 = 80.4
-Q739 = 124.9
+Q739 = 125
 Q740 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #184***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #185***************
 Q741 = 501.0
 Q742 = 81.36
-Q743 = 124.9
+Q743 = 125
 Q744 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #185***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #186***************
 Q745 = 496.44
 Q746 = 81.12
-Q747 = 124.9
+Q747 = 125
 Q748 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #186***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #187***************
 Q749 = 476.4
 Q750 = 78.0
-Q751 = 124.9
+Q751 = 125
 Q752 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #187***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #188***************
 Q753 = 459.24
 Q754 = 74.4
-Q755 = 124.9
+Q755 = 125
 Q756 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #188***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #189***************
 Q757 = 455.28
 Q758 = 74.64
-Q759 = 124.9
+Q759 = 125
 Q760 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #189***************
 
@@ -1345,21 +1345,21 @@ Q768 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #192***************
 Q769 = 496.8
 Q770 = 87.47999999999999
-Q771 = 124.9
+Q771 = 125
 Q772 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #192***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #193***************
 Q773 = 493.2
 Q774 = 91.19999999999999
-Q775 = 124.9
+Q775 = 125
 Q776 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #193***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #194***************
 Q777 = 491.64
 Q778 = 94.08
-Q779 = 124.9
+Q779 = 125
 Q780 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #194***************
 
@@ -1380,28 +1380,28 @@ Q788 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #197***************
 Q789 = 472.44
 Q790 = 80.4
-Q791 = 124.9
+Q791 = 125
 Q792 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #197***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #198***************
 Q793 = 470.04
 Q794 = 83.16
-Q795 = 124.9
+Q795 = 125
 Q796 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #198***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #199***************
 Q797 = 475.68
 Q798 = 94.32
-Q799 = 124.9
+Q799 = 125
 Q800 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #199***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #200***************
 Q801 = 477.24
 Q802 = 95.52
-Q803 = 124.9
+Q803 = 125
 Q804 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #200***************
 
@@ -1422,42 +1422,42 @@ Q812 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #203***************
 Q813 = 525.72
 Q814 = 104.28
-Q815 = 124.9
+Q815 = 125
 Q816 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #203***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #204***************
 Q817 = 518.64
 Q818 = 105.12
-Q819 = 124.9
+Q819 = 125
 Q820 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #204***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #205***************
 Q821 = 488.15999999999997
 Q822 = 99.47999999999999
-Q823 = 124.9
+Q823 = 125
 Q824 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #205***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #206***************
 Q825 = 448.44
 Q826 = 94.32
-Q827 = 124.9
+Q827 = 125
 Q828 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #206***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #207***************
 Q829 = 441.48
 Q830 = 94.44
-Q831 = 124.9
+Q831 = 125
 Q832 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #207***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #208***************
 Q833 = 435.36
 Q834 = 96.24
-Q835 = 124.9
+Q835 = 125
 Q836 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #208***************
 
@@ -1478,35 +1478,35 @@ Q844 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #211***************
 Q845 = 506.4
 Q846 = 109.91999999999999
-Q847 = 124.9
+Q847 = 125
 Q848 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #211***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #212***************
 Q849 = 502.92
 Q850 = 112.19999999999999
-Q851 = 124.9
+Q851 = 125
 Q852 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #212***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #213***************
 Q853 = 500.76
 Q854 = 115.68
-Q855 = 124.9
+Q855 = 125
 Q856 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #213***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #214***************
 Q857 = 498.36
 Q858 = 126.48
-Q859 = 124.9
+Q859 = 125
 Q860 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #214***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #215***************
 Q861 = 494.76
 Q862 = 136.44
-Q863 = 124.9
+Q863 = 125
 Q864 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #215***************
 
@@ -1527,70 +1527,70 @@ Q872 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #218***************
 Q873 = 500.15999999999997
 Q874 = 110.52
-Q875 = 124.9
+Q875 = 125
 Q876 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #218***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #219***************
 Q877 = 496.2
 Q878 = 111.36
-Q879 = 124.9
+Q879 = 125
 Q880 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #219***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #220***************
 Q881 = 488.52
 Q882 = 109.19999999999999
-Q883 = 124.9
+Q883 = 125
 Q884 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #220***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #221***************
 Q885 = 471.6
 Q886 = 106.19999999999999
-Q887 = 124.9
+Q887 = 125
 Q888 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #221***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #222***************
 Q889 = 465.84
 Q890 = 107.28
-Q891 = 124.9
+Q891 = 125
 Q892 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #222***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #223***************
 Q893 = 463.44
 Q894 = 110.16
-Q895 = 124.9
+Q895 = 125
 Q896 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #223***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #224***************
 Q897 = 463.68
 Q898 = 111.47999999999999
-Q899 = 124.9
+Q899 = 125
 Q900 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #224***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #225***************
 Q901 = 468.36
 Q902 = 129.36
-Q903 = 124.9
+Q903 = 125
 Q904 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #225***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #226***************
 Q905 = 469.68
 Q906 = 132.12
-Q907 = 124.9
+Q907 = 125
 Q908 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #226***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #227***************
 Q909 = 471.84
 Q910 = 132.6
-Q911 = 124.9
+Q911 = 125
 Q912 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #227***************
 
@@ -1611,35 +1611,35 @@ Q920 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #230***************
 Q921 = 495.0
 Q922 = 123.72
-Q923 = 124.9
+Q923 = 125
 Q924 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #230***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #231***************
 Q925 = 494.28
 Q926 = 122.75999999999999
-Q927 = 124.9
+Q927 = 125
 Q928 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #231***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #232***************
 Q929 = 483.72
 Q930 = 120.12
-Q931 = 124.9
+Q931 = 125
 Q932 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #232***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #233***************
 Q933 = 478.2
 Q934 = 119.28
-Q935 = 124.9
+Q935 = 125
 Q936 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #233***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #234***************
 Q937 = 474.72
 Q938 = 119.88
-Q939 = 124.9
+Q939 = 125
 Q940 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #234***************
 
@@ -1660,28 +1660,28 @@ Q948 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #237***************
 Q949 = 492.36
 Q950 = 134.04
-Q951 = 124.9
+Q951 = 125
 Q952 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #237***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #238***************
 Q953 = 491.52
 Q954 = 132.84
-Q955 = 124.9
+Q955 = 125
 Q956 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #238***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #239***************
 Q957 = 476.15999999999997
 Q958 = 130.92000000000002
-Q959 = 124.9
+Q959 = 125
 Q960 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #239***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #240***************
 Q961 = 472.92
 Q962 = 129.36
-Q963 = 124.9
+Q963 = 125
 Q964 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #240***************
 
@@ -1702,21 +1702,21 @@ Q972 = 0
 ;************ Start Of Cartesian Coordinate Position/Pose Point #243***************
 Q973 = 513.12
 Q974 = 140.39999999999998
-Q975 = 124.9
+Q975 = 125
 Q976 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #243***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #244***************
 Q977 = 514.92
 Q978 = 150.36
-Q979 = 124.9
+Q979 = 125
 Q980 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #244***************
 
 ;************ Start Of Cartesian Coordinate Position/Pose Point #245***************
 Q981 = 518.52
 Q982 = 160.07999999999998
-Q983 = 124.9
+Q983 = 125
 Q984 = 0
 ;************ End Of Cartesian Coordinate Position/Pose Point   #245***************
 
